@@ -8,41 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hora de Invertir</title>
   </head>
   <body>
     <div class="container-fluid col-6">
       <h1>Calculadora de Plazo Fijo</h1>
-      <h3>Calcula el interes de tu deposito a plazo fijo</h3>
+      <h5>Calcula el interes de tu deposito a plazo fijo</h5>
     </div>
+
+    <div class="row">
+
     <div class="container-fluid col-8 border border-primary">
       <br/>
       <div class="row row-cols-2">
         <div class="col">
           <form>
             <div class="form-group row">
-              <label for="inputDinero" class="col-sm-4 col-form-label">Dinero a invertir</label>
-              <div class="col-sm-4">
+              <label for="inputDinero" class="col-sm-6 col-form-label">Capital a invertir</label>
+              <div class="col-sm-6">
                 <input type="email" class="form-control" id="inputDinero">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputTiempo" class="col-sm-4 col-form-label">Tiempo de inversion</label>
+              <label for="inputTiempo" class="col-sm-6 col-form-label">Tiempo de inversion (en dias)</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" id="inputTiempo">
               </div>
             </div>
             <div class="form-group row">
-              <label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Seleccione un Banco</label>
-              <div class="col-sm-4">
+              <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Seleccione un Banco</label>
+              <div class="col-sm-6">
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Banco Macro</option>
                   <option>Mercado Pago</option>
+                  <option>Banco Galicia</option>
+                  <option>Banco Macro</option>
+                  <option>Banco Nacion</option>
                 </select>
               </div>
             </div>
             <div class="form-group row">
-              <label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Dinero Estimado</label>
+              <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Dinero Estimado</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" id="inputTiempo">
               </div>
@@ -58,6 +63,8 @@
           <canvas id="myChart"></canvas>
         </div>
       </div>
+
+
 
     </div>
     <!-- Optional JavaScript -->

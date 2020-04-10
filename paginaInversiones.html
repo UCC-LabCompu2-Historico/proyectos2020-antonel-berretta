@@ -1,78 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="author" content="Antonel y Berretta"/>
+  <meta name="keywords" content="Inversion, Invierte, Hora de Invertir, Plazo Fijo, Calculadora de Plazo fijo, Intereses de Plazo fijo"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hora de Invertir</title>
-  </head>
-  <body>
-    <div class="container-fluid col-6">
-      <h1>Calculadora de Plazo Fijo</h1>
-      <h5>Calcula el interes de tu deposito a plazo fijo</h5>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href=".idea/css/Main.css">
+
+
+  <title>Hora de Invertir</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src=".idea/Logo3.png"style="width: 35%">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <h4><a class="nav-link" href="#">Calculadora de Plazo Fijo</a></h4>
+        </li>
+        <li class="nav-item">
+          <h4> <a class="nav-link" href="#">Concepto de Plazo Fijo</a></h4>
+        </li>
+        <li class="nav-item">
+          <h4><a class="nav-link" href="#">Bancos Argentina</a></h4>
+        </li>
+      </ul>
+
     </div>
 
-    <div class="row">
+  </div>
+</nav>
 
-    <div class="container-fluid col-8 border border-primary">
-      <br/>
-      <div class="row row-cols-2">
-        <div class="col">
-          <form>
-            <div class="form-group row">
-              <label for="inputDinero" class="col-sm-6 col-form-label">Capital a invertir</label>
-              <div class="col-sm-6">
-                <input type="email" class="form-control" id="inputDinero">
-              </div>
+<header>
+  <div class="container-fluid col-11">
+    <h1>Calculadora de Plazo Fijo</h1>
+    <h5>Calcula el interes de tu deposito a plazo fijo</h5>
+  </div>
+</header>
+
+
+<div class="row">
+
+  <div class="container-fluid col-10 border border-primary">
+    <br/>
+    <div class="row row-cols-2">
+      <div class="col">
+        <form>
+          <div class="form-group row">
+            <label for="inputDinero"  class="col-sm-6 col-form-label">Capital a invertir</label>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" id="inputDinero">
             </div>
-            <div class="form-group row">
-              <label for="inputTiempo" class="col-sm-6 col-form-label">Tiempo de inversion (en dias)</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" id="inputTiempo">
-              </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputTiempo" class="col-sm-6 col-form-label">Tiempo de inversion (en dias)</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputTiempo">
             </div>
-            <div class="form-group row">
-              <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Seleccione un Banco</label>
-              <div class="col-sm-6">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Mercado Pago</option>
-                  <option>Banco Galicia</option>
-                  <option>Banco Macro</option>
-                  <option>Banco Nacion</option>
-                </select>
-              </div>
+          </div>
+          <div class="form-group row">
+            <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Seleccione un Banco</label>
+            <div class="col-sm-6">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Mercado Pago</option>
+                <option>Banco Galicia</option>
+                <option>Banco Macro</option>
+                <option>Banco Nacion</option>
+              </select>
             </div>
-            <div class="form-group row">
-              <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Dinero Estimado</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" id="inputTiempo">
-              </div>
+          </div>
+          <div class="form-group row">
+            <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Dinero Estimado</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputTiempo">
             </div>
-            <div class="form-group row">
-              <div class="col-sm-4">
-                <button type="button" class="btn btn-primary">Calcular</button>
-              </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <button type="button" class="btn btn-primary">Calcular</button>
             </div>
-          </form>
-        </div>
-        <div class="col">
-          <canvas id="myChart"></canvas>
-        </div>
+          </div>
+        </form>
       </div>
-
-
-
+      <div class="col">
+        <canvas id="myChart"></canvas>
+      </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="./index.js"></script>
-  </body>
+  </div>
+
+  <footer>
+    Copyright ©2020 Inversiones, Inc. Todos los derechos reservados.
+
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./index.js"></script>
+
+
+</body>
 </html>

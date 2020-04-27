@@ -58,39 +58,52 @@
     <br/>
     <div class="row cols-2">
       <div class="col">
-        <form>
+        <form class="needs-validation" novalidate onsubmit="return false">
           <div class="form-group row">
             <label for="inputDinero"  class="col-sm-6 col-form-label">Capital a invertir</label>
             <div class="col-sm-6">
-              <input type="email" class="form-control" id="inputDinero">
+              <input type="number" class="form-control" id="inputDinero" min="1" max="500000" placeholder="0 - $ 500.000" required/>
+              <div class="invalid-feedback">
+                Error, ingrese un monto valido.
+              </div>
+              <div class="valid-feedback">
+                Capital valido!
+              </div>
             </div>
           </div>
+
           <div class="form-group row">
-            <label for="inputTiempo" class="col-sm-6 col-form-label">Tiempo de inversion (en dias)</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="inputTiempo">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Seleccione un Banco</label>
+            <label for="inputTiempo" class="col-sm-6 col-form-label">Tiempo de inversion</label>
             <div class="col-sm-6">
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Mercado Pago</option>
-                <option>Banco Galicia</option>
-                <option>Banco Macro</option>
-                <option>Banco Nacion</option>
+              <input type="number" class="form-control" min="1" max="365" id="inputTiempo" placeholder="0 - 365 dias" required/>
+              <div class="invalid-feedback">
+                Error, ingrese un tiempo valido.
+              </div>
+              <div class="valid-feedback">
+                Tiempo valido!
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="selectBanco" class="col-sm-6 col-form-label">Seleccione un Banco</label>
+            <div class="col-sm-6">
+              <select class="form-control" id="selectBanco" required>
+                <option value="1">Mercado Pago</option>
+                <option value="2">Banco Galicia</option>
+                <option value="3">Banco Macro</option>
+                <option value="4">Banco Nacion</option>
               </select>
             </div>
           </div>
           <div class="form-group row">
-            <label for="exampleFormControlSelect1" class="col-sm-6 col-form-label">Dinero Estimado</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="inputTiempo">
+            <label class="col-sm-6 col-form-label">Dinero Estimado</label>
+            <div class="col-sm-6">
+              <label class="col-sm-6 col-form-label" id="labelDineroTotal"></label>
             </div>
           </div>
           <div class="form-group row">
             <div class="col-sm-4">
-              <button type="button" class="btn btn-primary">Calcular</button>
+              <button type="submit" class="btn btn-primary" onclick="calcularInversion()">Calcular</button>
             </div>
           </div>
         </form>
@@ -108,7 +121,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="./index.js"></script>
+  <script src="Libreria/js/index.js"></script>
 
 
   <div class="footer-style">

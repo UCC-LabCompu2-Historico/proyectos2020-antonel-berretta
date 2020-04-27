@@ -12,18 +12,26 @@
     margin-top: 30px;
 
 }
+h1 {
+    text-decoration: underline;
+}
+#img-logo{
+    width: 35%;
+}
+#img-max-width{
+    width: 100%;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
 }
-.footer-style{
+#footer-style{
     position: fixed;
     left: 0;
     bottom: 0;

@@ -31,4 +31,4 @@ Las ideas o sugerencias para mejorar nuestra pagina son siempre bienvenidas: Si 
 
 El sitio fue diseñado como proyecto para la materia Laboratorio de Computación 2 (Universidad Católica de Córdoba) por Antonel, Gino y Berretta, Tomas.
 
-URL del Proyecto: [https://ucc-labcompu2.github.io/proyectos2020-antonel-berretta/Conceptos_de_Plazo_Fijo.html]
+URL del Proyecto: [https://ucc-labcompu2.github.io/proyectos2020-antonel-berretta/]

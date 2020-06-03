@@ -1,4 +1,3 @@
-
 function calcularInversion(){
     var dinero = document.getElementById("inputDinero").value;
     var tiempo = document.getElementById("inputTiempo").value;

@@ -82,25 +82,25 @@ function calcularInversion(){
 /** Crea el grafico vacio que se ve al iniciar la pagina */
 crearGrafico();
 function crearGrafico(){
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
 
-    // The data for our dataset
-    data: {
-        labels: [],
-        datasets: [{
-            label: 'GRAFICO DE INVERSION',
-            backgroundColor: 'rgb(74,128,140)',
-            borderColor: 'rgba(3,3,8,0.75)',
-            data: []
-        }]
-    },
+        // The data for our dataset
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'GRAFICO DE INVERSION',
+                backgroundColor: 'rgb(74,128,140)',
+                borderColor: 'rgba(3,3,8,0.75)',
+                data: []
+            }]
+        },
 
-    // Configuration options go here
-    options: {}
-});
+        // Configuration options go here
+        options: {}
+    });
 };
 
 /** Valida que los datos del form sean correctos */

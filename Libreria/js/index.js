@@ -18,7 +18,7 @@ function calcularInversion(){
 
     /** Corrobora que el dinero y el tiempo sean validos, procede a graficar */
     if (dinero > 0 && dinero <= 500000 && tiempo > 0 && tiempo <= 12 ){
-        document.getElementById("labelDineroTotal").innerHTML = dineroFinal.toFixed(2);
+        document.getElementById("labelDineroTotal").innerHTML = `$ ${dineroFinal.toFixed(2)}`;
         var a = Number(dinero);
         var b = Number(dineroEstimado);
         var dineroFinal = a + b;

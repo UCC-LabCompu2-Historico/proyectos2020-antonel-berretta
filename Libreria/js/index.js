@@ -105,6 +105,7 @@ function crearGrafico(param1, param2){
                     event.stopPropagation();
                     // En caso de datos invalidos crea un grafico vacio
                     crearGrafico([],[]);
+                    document.getElementById("labelDineroTotal").innerHTML = " ";
                 }
                 form.classList.add('was-validated');
             }, false);

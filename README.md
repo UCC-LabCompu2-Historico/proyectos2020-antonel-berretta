@@ -12,7 +12,7 @@ Para utilizar esta aplicacion solo es necesario rellenar los campos obligatorios
 
 El proyecto consta de:
 - HTML5: El cual se encuentra dividido en tres secciones (Home, teoría, Bancos).
-    -  En Home se encuentra el simulador para hacer uso del mismo.
+    - En Home se encuentra el simulador para hacer uso del mismo.
     - En teoria se encuentran los conceptos basicos de los plazos fijos.
     - En bancos se obtiene una breve descricpion de los mismos.
 - Images: Esta carpeta contiene tanto las imagenes empleadas como las que solo fueron utilizadas para prueba.

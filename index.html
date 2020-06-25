@@ -6,11 +6,13 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content="Antonel y Berretta"/>
-  <meta name="keywords" content="Inversion, Invierte, Hora de Invertir, Plazo Fijo, Calculadora de Plazo fijo, Intereses de Plazo fijo"/>
+  <meta name="keywords"
+        content="Inversion, Invierte, Hora de Invertir, Plazo Fijo, Calculadora de Plazo fijo, Intereses de Plazo fijo"/>
 
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="Libreria/css/Main.css">
 
@@ -26,7 +28,8 @@
     <a class="navbar-brand" href="./index.html">
       <img src="Libreria/Img/Logo3.png" id="img-logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse container" id="navbarText">
@@ -35,7 +38,7 @@
           <h5><a class="nav-link" href="./index.html">Calculadora de Plazo Fijo</a></h5>
         </li>
         <li class="nav-item">
-          <h5> <a class="nav-link" href="./Conceptos_de_Plazo_Fijo.html">Concepto de Plazo Fijo</a></h5>
+          <h5><a class="nav-link" href="./Conceptos_de_Plazo_Fijo.html">Concepto de Plazo Fijo</a></h5>
         </li>
         <li class="nav-item">
           <h5><a class="nav-link" href="./Bancos_Argentina.html">Bancos Argentina</a></h5>
@@ -61,9 +64,10 @@
       <div class="col">
         <form class="needs-validation" novalidate onsubmit="return false">
           <div class="form-group row">
-            <label for="inputDinero"  class="col-sm-6 col-form-label">Capital a invertir</label>
+            <label for="inputDinero" class="col-sm-6 col-form-label">Capital a invertir</label>
             <div class="col-sm-6">
-              <input type="number" class="form-control" id="inputDinero" min="1" max="500000" placeholder="0 - $ 500.000" required/>
+              <input type="number" class="form-control" id="inputDinero" min="1" max="500000"
+                     placeholder="0 - $ 500.000" required/>
               <div class="invalid-feedback">
                 Error, ingrese un monto valido.
               </div>
@@ -76,7 +80,8 @@
           <div class="form-group row">
             <label for="inputTiempo" class="col-sm-6 col-form-label">Tiempo de inversion</label>
             <div class="col-sm-6">
-              <input type="number" class="form-control" min="1" max="36" id="inputTiempo" placeholder="1 - 36 meses" required/>
+              <input type="number" class="form-control" min="1" max="36" id="inputTiempo"
+                     placeholder="1 - 36 meses" required/>
               <div class="invalid-feedback">
                 Error, ingrese un tiempo valido.
               </div>
@@ -89,10 +94,10 @@
             <label for="selectBanco" class="col-sm-6 col-form-label">Seleccione un Banco</label>
             <div class="col-sm-6">
               <select class="form-control" id="selectBanco" required>
-                <option value="1">Mercado Pago</option>
-                <option value="2">Banco Galicia</option>
-                <option value="3">Banco Macro</option>
-                <option value="4">Banco Nacion</option>
+                <option value="1">Mercado Pago - Anual 20.4%</option>
+                <option value="2">Banco Galicia - Anual 23.5%</option>
+                <option value="3">Banco Macro - Anual 27.08%</option>
+                <option value="4">Banco Nacion - Anual 21%</option>
               </select>
             </div>
           </div>
@@ -104,12 +109,13 @@
           </div>
           <div class="form-group row">
             <div class="col-sm-4">
-              <button type="submit" class="btn btn-primary" onclick="calcularInversion()" >Calcular</button>
+              <button type="submit" class="btn btn-primary" onclick="calcularInversion()">Calcular
+              </button>
             </div>
           </div>
         </form>
       </div>
-      <div class="chart-container col" style="position: relative; height:40vh; width:80vw">
+      <div class="chart-container col CuadroS">
         <canvas id="myChart"></canvas>
       </div>
     </div>
@@ -118,12 +124,20 @@
 </div>
 
 <!-- Bootstrap JavaScript -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="Libreria/js/index.js"></script>
-<script>window.onload = function(){crearGrafico([],[]);};</script>
+<script>window.onload = function () {
+  crearGrafico([], []);
+};</script>
 
 
 <div id="footer-style">

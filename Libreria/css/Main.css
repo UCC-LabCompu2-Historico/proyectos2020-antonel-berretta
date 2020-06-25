@@ -1,14 +1,14 @@
-.navbar{
-    box-shadow: 2px 2px 2px #000 ;
-    opacity: .9 ;
+.navbar {
+    box-shadow: 2px 2px 2px #000;
+    opacity: .9;
     background-color: #191919 !important;
 }
 
 .nav-item .nav-link {
-    color: #ffffff ;
+    color: #ffffff;
 }
 
-.container-fluid{
+.container-fluid {
     margin-top: 30px;
 }
 
@@ -16,11 +16,11 @@ h1 {
     text-decoration: underline;
 }
 
-#img-logo{
+#img-logo {
     width: 35%;
 }
 
-#img-max-width{
+#img-max-width {
     width: 100%;
 }
 
@@ -36,7 +36,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-#footer-style{
+#footer-style {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -47,6 +47,12 @@ input[type=number] {
     padding: 25px 0;
 }
 
-body{
-    padding-bottom:80px;
+body {
+    padding-bottom: 80px;
+}
+
+.CuadroS {
+    position: relative;
+    height: 40vh;
+    width: 80vw;
 }
